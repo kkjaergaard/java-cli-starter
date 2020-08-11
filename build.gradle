@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    // easily make a fat jar, use the task "gradle shadowJar"
+    id "com.github.johnrengelman.shadow" version "5.2.0"  // use 6.0.0 or later for gradle 6+
+}
+
+group 'dk.kkjaergaard'
+version '0.2'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile 'info.picocli:picocli:4.5.0'
+    compile 'org.tinylog:tinylog:1.3.6'
+    annotationProcessor 'info.picocli:picocli-codegen:4.5.0'
+}
+
+compileJava {
+    // needed by picocli, see manual
+    options.compilerArgs += ["-Aproject=${project.group}/${project.name}"]
+}
+
+jar {
+    manifest {
+        // make application entrypoint
+        attributes 'Main-Class': 'dk.kkjaergaard.clistarter.Main'
+    }
+}
