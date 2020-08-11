@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="project" value="dk.kkjaergaard/clistarter" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.picocli/picocli-codegen/4.5.0/b7d174e917d454d6b120574a6e77c3a72ee5168e/picocli-codegen-4.5.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.picocli/picocli/4.5.0/514e1441797d1c7ea3730d3a78f244c226573471/picocli-4.5.0.jar" />
+        </processorPath>
+        <module name="clistarter.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8" />
+  </component>
+</project>
