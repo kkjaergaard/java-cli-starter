@@ -32,7 +32,6 @@ class Main implements Callable<Integer> {
     }
 
     public Integer call() throws Exception {
-        // here: make a list of files with errors or files with non-identical duplicates
         this.init_logger();
         Logger.warn("Example warning");
         Logger.info("Example information");
