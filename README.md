@@ -1,6 +1,6 @@
 # Java CLI Starter
 
-This is a small example of how you can build a Java command-line interface app. It uses Picocli (4.5.2) as the command-line 
+This is a small example of how you can build a Java command-line interface app. It uses Picocli (4.6.2) as the command-line 
 library, tinylog (1.3.6) for logging, and shadowJar (6.1.0) for packing everything into one file.
 
 I started this project as I needed to replace a lot of Python scripts with something that deploys with less concern 
@@ -11,3 +11,10 @@ To pack the CLI app into a single (fat) jar file that contains all necessary lib
 ## License
 
 MIT.
+
+
+## TODO
+
+Upgrade to newest shadow (requires Gradle 7+).
+
+Add example of unit test, comment files, add some more example code.
